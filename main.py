@@ -10,7 +10,7 @@ clock = pygame.time.Clock()
 
 # 시험지 이미 로드
 paper_images = [
-    pygame.image.load(f"paper_{i}.jpg")
+    pygame.image.load(rf"D:\pythonProject\0점을 피해라\images\scorePaper_img\paper_{i}.jpg")
     for i in range(7)
 ]
 PAPER_COUNT = 7
@@ -20,7 +20,7 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 
 # 배경 이미지 로드
 try:
-    background = pygame.image.load(r"D:\pythonProject\background1.jpeg")
+    background = pygame.image.load(r"D:\pythonProject\0점을 피해라\images\background1.jpeg")
     background = pygame.transform.scale(background, (screen_width, screen_height))
 except pygame.error as e:
     print(f"Error loading background image: {e}")
@@ -29,10 +29,10 @@ except pygame.error as e:
 
 # 캐릭터 이미지 로드
 try:
-    character_front = pygame.image.load(r"D:\pythonProject\main_character.png")  # 정면 이미지 경로
-    character_left = pygame.image.load(r"D:\pythonProject\character_left.png")   # 왼쪽 이미지 경로
-    character_right = pygame.image.load(r"D:\pythonProject\character_right.png") # 오른쪽 이미지 경로
-    character_receive_paper = pygame.image.load(r"D:\pythonProject\character_catch.png")
+    character_front = pygame.image.load(r"D:\pythonProject\0점을 피해라\images\character_img\main_character.png")  # 정면 이미지 경로
+    character_left = pygame.image.load(r"D:\pythonProject\0점을 피해라\images\character_img\character_left.png")   # 왼쪽 이미지 경로
+    character_right = pygame.image.load(r"D:\pythonProject\0점을 피해라\images\character_img\character_right.png") # 오른쪽 이미지 경로
+    character_receive_paper = pygame.image.load(r"D:\pythonProject\0점을 피해라\images\character_img\character_catch.png")
     character_front = pygame.transform.scale(character_front, (200, 200))
     character_left = pygame.transform.scale(character_left, (200, 200))
     character_right = pygame.transform.scale(character_right, (200, 200))
@@ -106,7 +106,8 @@ while running:
 
     pygame.display.flip()
 
-    clock.tick(10)
+    clock.tick(20)
+
 
 # Pygame 종료
 pygame.quit()
