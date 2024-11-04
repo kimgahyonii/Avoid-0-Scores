@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae0eb163-9e80-418d-8539-d019fe7b74c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/0점을 피해라.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper_6.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="ae0eb163-9e80-418d-8539-d019fe7b74c7" name="Changes" comment="배경 이미지 로드, 캐릭터 이미지 로드, 시험지 이미지 로드, 좌우 방향키 이벤트" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,15 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\pythonProject\0점을 피해라" />
@@ -74,6 +59,19 @@
       <option name="presentableId" value="Default" />
       <updated>1730106985159</updated>
     </task>
+    <task id="LOCAL-00001" summary="배경 이미지 로드, 캐릭터 이미지 로드, 시험지 이미지 로드, 좌우 방향키 이벤트">
+      <option name="closed" value="true" />
+      <created>1730722272309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730722272309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="배경 이미지 로드, 캐릭터 이미지 로드, 시험지 이미지 로드, 좌우 방향키 이벤트" />
+    <option name="LAST_COMMIT_MESSAGE" value="배경 이미지 로드, 캐릭터 이미지 로드, 시험지 이미지 로드, 좌우 방향키 이벤트" />
   </component>
 </project>
