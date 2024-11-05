@@ -13,7 +13,9 @@ paper_images = [
     pygame.image.load(rf"D:\pythonProject\0점을 피해라\images\scorePaper_img\paper_{i}.jpg")
     for i in range(7)
 ]
+paper_100 = paper_images[6]
 PAPER_COUNT = 7
+
 # 화면 크기 설정
 screen_width, screen_height = 1000, 600
 screen = pygame.display.set_mode((screen_width, screen_height))
@@ -48,7 +50,9 @@ character_x = screen_width // 2 - character_front.get_width() // 2
 character_y = screen_height // 2 - character_front.get_height() // 2 + 70
 character_speed = 10
 
+collected_papers = []
 # 시험지 초기 위치 리스트
+
 papers = [
     {
         "image": random.choice(paper_images),
@@ -60,7 +64,12 @@ papers = [
 ]
 
 # 시험지 받을 수 있는 상태
-can_receive_paper = False
+# can_receive_paper = False
+
+# 득점 변수
+score = 0
+flash_timer = 0
+flash_duration = 10
 
 # 게임 진행 확인
 running = True
@@ -82,9 +91,11 @@ while running:
     elif keys[pygame.K_w]:
         character = character_receive_paper
         can_receive_paper = True
+    elif keys[pygame.K_w]:
+        character = character_receive_paper
     else:
         character = character_front  # 정면 이미지로 복귀
-        can_receive_paper = False # 시험지 받을 수 없는 상태
+        # can_receive_paper = False # 시험지 받을 수 없는 상태
 
     # 배경 이미지 그리기
     screen.blit(background, (0, 0))
@@ -101,11 +112,23 @@ while running:
             # 새로운 이미지 선택
             paper["image"] = random.choice(paper_images)
 
+        # 캐릭터와 paper_7 충돌 확인
+        if keys[pygame.K_w] and paper["image"] == paper_100:
+            if paper["y"] + paper["image"].get_height() > character_y and paper["y"] < character_y + character.get_height():
+                if paper["x"] < character_x + character.get_width() and paper["x"] + paper["image"].get_width() > character_x:
+                    score += 100
+                    flash_timer = flash_duration # 득점 시 깜빡임
+                    papers.remove(paper)
+
+    # 득점 시 깜빡임 효과 적용
+    if flash_timer > 0:
+        flash_timer -= 1
+        if flash_timer % 2 == 0:
+            screen.fill((255,255,255)) #하얀색으로 화면 깜빡임
     # 캐릭터 이미지 그리기
     screen.blit(character, (character_x, character_y))
 
     pygame.display.flip()
-
     clock.tick(20)
 
 

@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae0eb163-9e80-418d-8539-d019fe7b74c7" name="Changes" comment="배경 이미지 로드, 캐릭터 이미지 로드, 시험지 이미지 로드, 좌우 방향키 이벤트">
+    <list default="true" id="ae0eb163-9e80-418d-8539-d019fe7b74c7" name="Changes" comment="images 폴더 생성 및 이미지 정리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper_6.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +78,20 @@
       <option name="project" value="LOCAL" />
       <updated>1730722547826</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="images 폴더 생성 및 이미지 정리">
+      <option name="closed" value="true" />
+      <created>1730723535342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730723535342</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="배경 이미지 로드, 캐릭터 이미지 로드, 시험지 이미지 로드, 좌우 방향키 이벤트" />
-    <option name="LAST_COMMIT_MESSAGE" value="배경 이미지 로드, 캐릭터 이미지 로드, 시험지 이미지 로드, 좌우 방향키 이벤트" />
+    <MESSAGE value="images 폴더 생성 및 이미지 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="images 폴더 생성 및 이미지 정리" />
   </component>
 </project>
