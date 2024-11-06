@@ -91,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730818109188</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="시험지 랜덤으로 떨어지기, 100점짜리 시험지 받기, 화면 깜빡이기">
+      <option name="closed" value="true" />
+      <created>1730859293442</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730859293442</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
