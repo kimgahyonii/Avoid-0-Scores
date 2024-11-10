@@ -178,6 +178,7 @@ def move_paper(paper):
         paper['y'] = random.randint(-600, -50)
         paper['x'] = random.randint(0, screen_width - paper["image"].get_width())
         paper['speed'] = random.randint(2, 5)
+        paper['image'] = random.choice([img for img in paper_images if img != paper['image']])  # 중복을 피하기 위해 다른 이미지를 선택
 
 while running:
     score = 0
@@ -206,14 +207,14 @@ while running:
         character_updated = True
         for paper in papers[:]:
             if paper["image"] == paper_images[6]:
+                if 'score' in paper and 'score_added' not in paper:
+                    print(f"{paper['score']}점 추가")
+                    paper['score_added'] = True
+
                 if (paper["y"] + paper["image"].get_height() > character_y and
                     paper["y"] < character_y + character.get_height() and
                     paper["x"] < character_x + character.get_width() and
                     paper["x"] + paper["image"].get_width() > character_x):
-
-                    if 'score' in paper and 'score_added' not in paper:
-                        print(f"{paper['score']}점 추가")
-                        paper['score_added'] = True
 
                     # 시험지 위치 리셋
                     paper["y"] = random.randint(-600, -50)
@@ -248,10 +249,6 @@ while running:
         if nearest_paper:
             current_index = paper_images.index(nearest_paper["image"])
             torn_image = torn_paper_images[current_index]
-
-            if 'score' in nearest_paper and 'score_added' not in nearest_paper:
-                print(f"{nearest_paper['score']}점 추가!")
-                nearest_paper['score_added'] = True  # 점수 추가됨 표시
 
             fading_papers.append({
                 "image": torn_image,
